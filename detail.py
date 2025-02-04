@@ -22,11 +22,6 @@ print(student.keys())
 #access values
 print(student.values())
 
-
-
-
-
-
 #to print all key and value pair together 
 for key in student.keys():
     print(key, student[key])
@@ -96,4 +91,12 @@ student["shalini"]["age"] = 29
 print(student["shalini"])
 #length of dictionary = no keys - value pair
 print(len(student))
+
+sum = 0
+for i in student.values():
+    total = sum(i)
+    sum += total
+
+print(sum)
+
 
